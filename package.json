@@ -1,0 +1,15 @@
+{
+  "name": "back-end-aula02-2025-wellifabio",
+  "version": "1.0.0",
+  "description": "Exemplo de CRUD simples **full-stack** com uma tabela de clientes.\r |Wireraframe Web|Wireframe Mobile|\r |-|-|\r |![Tela Inicial](./wireframe.png)|![Tela Inicial](./wireframe-mobile.png)|",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -7,7 +7,7 @@ cadastro.addEventListener('submit', (event) => {
         cpf: cadastro.cpf.value,
         nascimento: cadastro.nascimento.value
     }
-    fetch('http://localhost:4000/clientes', {
+    fetch('http://localhost:4000/medicos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,16 +19,16 @@ cadastro.addEventListener('submit', (event) => {
             if (status === 201) {
                 msg3('Cliente cadastrado com sucesso');
             } else {
-                msg3('Erro ao cadastrar cliente');
+                msg3('Erro ao cadastrar medico');
             }
         });
 });
 
 //Receber os dados do servidor e exibir na tabela
-fetch('http://localhost:4000/clientes')
+fetch('http://localhost:4000/medicos')
     .then(response => response.json())
     .then(clientes => {
-        const tabela = document.getElementById('clientes');
+        const tabela = document.getElementById('medicos');
         clientes.forEach((cliente) => {
             const linha = document.createElement('tr');
             linha.innerHTML = `
